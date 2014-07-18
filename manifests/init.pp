@@ -1,3 +1,21 @@
+# Class: rundeck
+#
+# This class installs Rundeck
+#
+# Parameters:
+#
+# Actions:
+#   - Adds the Rundeck repo
+#   - Installs the rundeck package
+#
+# Requires:
+#
+# Sample Usage:
+#
+#  For a standard installation, use:
+#
+#    class { 'rundeck': }
+#
 class rundeck {
   $required = $::operatingsystem ? {
     /(?i-mx:centos|fedora|redhat|scientific)/ => 'rundeck',
